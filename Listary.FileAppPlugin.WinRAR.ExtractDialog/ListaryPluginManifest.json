@@ -1,0 +1,15 @@
+﻿{
+  "ManifestVersion": 1,
+
+  "Id": "WinRAR.ExtractDialog",
+  "PluginVersion": "0.1.0",
+  "DisplayName": "WinRAR Extract Dialog",
+  "Authors": [ "Listary" ],
+  "Description": "Listary file application plugin for WinRAR's extract dialog.",
+  "Homepage": "https://github.com/listary/Listary.FileAppPlugin.WinRAR",
+  "Icon": "Icon.png",
+
+  "Api": "NetFramework",
+  "ApiVersion": 1,
+  "Entry": "Listary.FileAppPlugin.WinRAR.ExtractDialog.dll"
+}
