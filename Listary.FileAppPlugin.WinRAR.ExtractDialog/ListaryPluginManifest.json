@@ -2,6 +2,7 @@
   "ManifestVersion": 1,
 
   "Id": "WinRAR.ExtractDialog",
+  "PluginType": "FileAppPlugin",
   "PluginVersion": "0.1.0",
   "DisplayName": "WinRAR Extract Dialog",
   "Authors": [ "Listary" ],
