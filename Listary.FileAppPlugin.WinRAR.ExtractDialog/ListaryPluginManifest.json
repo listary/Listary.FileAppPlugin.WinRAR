@@ -3,7 +3,7 @@
 
   "Id": "WinRAR.ExtractDialog",
   "PluginType": "FileAppPlugin",
-  "PluginVersion": "0.1.0",
+  "PluginVersion": "0.1.1",
   "DisplayName": "WinRAR Extract Dialog",
   "Authors": [ "Listary" ],
   "Description": "Listary file application plugin for WinRAR's extract dialog.",
