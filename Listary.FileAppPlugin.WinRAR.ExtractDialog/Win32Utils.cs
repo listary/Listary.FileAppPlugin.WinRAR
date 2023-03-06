@@ -107,8 +107,11 @@ namespace Listary.FileAppPlugin.WinRAR.ExtractDialog
 
         public static bool SetWindowText(this IFileAppPluginHost host, IntPtr hWnd, string text)
         {
-            byte[] bytes = Encoding.Unicode.GetBytes(text);
-            IntPtr result = host.SendMessage(hWnd, (uint)WM.SETTEXT, IntPtr.Zero, bytes);
+            // lParam should be a null-terminated string
+            List<byte> bytes = new List<byte>();
+            bytes.AddRange(Encoding.Unicode.GetBytes(text));
+            bytes.Add(0);
+            IntPtr result = host.SendMessage(hWnd, (uint)WM.SETTEXT, IntPtr.Zero, bytes.ToArray());
             return result != IntPtr.Zero;
         }
     }
